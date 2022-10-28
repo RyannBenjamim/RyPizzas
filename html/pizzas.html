@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RyPizzas</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pizzas.css">
+    <link rel="shortcut icon" href="../imgs/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="models">
+        <div class="pizza-item">
+            <div class="pizza-item-img"><img src="../imgs/pizza.png" alt="Pizza"></div>
+            <div class="pizza-item-add">
+                <p>+</p>
+            </div>
+            
+            <div class="pizza-item-price">R$ 20.19</div>
+            <div class="pizza-item-name">Mussarela</div>
+            <div class="pizza-item-desc">Descrição da pizza e Ingredientes</div>
+        </div>
+
+        <div class="cart-pizzas-box">
+            <div class="img-name">
+                <img src="../imgs/pizza.png" alt="">
+                <p class="cart-pizzas-item-name">Calabresa (G)</p>
+            </div>
+            <div class="cart-quant-btn-box">
+                <div class="cart-quant-btn-item" id="cart-quant-btn-mais">
+                    <span>+</span>
+                </div>
+                <div class="cart-quant-btn-item" id="cart-quant-btn-item">
+                    <p>0</p>
+                </div>
+                <div class="cart-quant-btn-item" id="cart-quant-btn-menos">
+                    <span>-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <div class="center">
+            <nav>
+                <a href="../index.html">
+                    <div class="logo">
+                        <i class="fa-solid fa-pizza-slice"></i>
+                        <h1>RyPizzas</h1>
+                    </div>
+                </a>
+
+                <ul>
+                    <li><a href="pizzas.html">Pizzas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+
+                <div class="menu-mobile">
+                    <div class="cart-mobile">
+                        <p class="cart-quant">0</p>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="center">
+            <p class="main-title">Pizzas</p>
+            <div class="container-pizzas"></div>
+        </div>
+
+        <section class="modal-container" onselectstart="return false">
+            <div class="modal-box">
+                <div class="modal-close">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="modal">
+                    <div class="modal-img-bx">
+                        <img src="../imgs/pizza.png" alt="">
+                    </div>
+                    <div class="modal-text-bx">
+                        <h1 class="modal-item-name">Mussarela</h1>
+                        <p class="modal-item-desc">Descrição e ingredientes da pizza escritos de uma maneira mais detalhada</p>
+                        <p class="subtitles">Tamanho</p>
+                        <div class="pizza-sizes-box">
+                            <div class="pizza-size" id="first">
+                                <h3>PEQUENA</h3>
+                                <span>100g</span>
+                            </div>
+                            <div class="pizza-size">
+                                <h3>MÉDIA</h3>
+                                <span>530g</span>
+                            </div>
+                            <div class="pizza-size selected" id="last">
+                                <h3>GRANDE</h3>
+                                <span>860g</span>
+                            </div>
+                        </div>
+                        <p class="subtitles">Preço</p>
+                        <div class="prices-box">
+                            <p class="modal-item-price">20.19</p>
+                            <div class="quant-btn-box">
+                                <div class="quant-btn-item" id="quant-btn-mais">
+                                    <span>+</span>
+                                </div>
+                                <div class="quant-btn-item">
+                                    <p>0</p>
+                                </div>
+                                <div class="quant-btn-item" id="quant-btn-menos">
+                                    <span>-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="cart-btn-add">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="cart" onselectstart="return false">
+            <div class="cart-container">
+                <div class="cart-mobile-close">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+
+                <div class="line"></div>
+                <h1 class="title">Suas Pizzas</h1>
+                <div class="cart-pizzas"></div>
+                <div class="line"></div>
+                <div class="subtotal-box">
+                    <h3>Subtotal</h3>
+                    <p class="subtotal-item">R$ 0.00</p>
+                </div>
+                <div class="line"></div>
+                <div class="desconto-box">
+                    <h3>Desconto (-10%)</h3>
+                    <p class="desconto-item">R$ 0.00</p>
+                </div>
+                <div class="line"></div>
+                <div class="total-box">
+                    <h1>Total</h1>
+                    <h1 class="total-item">R$ 0.00</h1>
+                </div>
+                <button class="finalizar-btn">Finalizar a compra</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="center">
+            <div class="redes">
+                <a href="https://www.instagram.com/ryann_benjamim/" target="blank">
+                    <div class="rede-card">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/ryan.costa.982" target="blank">
+                    <div class="rede-card">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/ryan-costa-a4b96b233/" target="blank">
+                    <div class="rede-card">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </a>
+                <a href="https://github.com/RyannBenjamim" target="blank">
+                    <div class="rede-card">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <p>Terms of Use . Privacy Policy</p>
+        <p class="copy">&copy; Ryan Costa Benjamim</p>
+    </footer>
+
+    <!-- Script do fontawesone -->
+    <script src="https://kit.fontawesome.com/45a1c2ef02.js" crossorigin="anonymous"></script>
+    <!-- Script -->
+    <script src="../js/pizzas.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/menu-mobile.js"></script>
+</body>
+</html>
